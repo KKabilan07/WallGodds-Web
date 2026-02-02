@@ -3,6 +3,13 @@ import { MdMailOutline } from "react-icons/md";
 import { FaGithub, FaLinkedin, FaDiscord } from "react-icons/fa";
 
 export const Footer = () => {
+    const socialLinks = [
+        {name: "Email", url: "mailto:wallgodds@gmail.com", icon: <MdMailOutline />},
+        {name: "GitHub", url: "https://github.com/WallGodds", icon: <FaGithub />},
+        {name: "LinkedIn", url: "https://www.linkedin.com/company/wallgodds", icon: <FaLinkedin />},
+        {name: "Discord", url: "https://discord.gg/kTQ5KWANp8", icon: <FaDiscord />},
+    ];
+
     return (
         <footer className={Styles.footer}>
             {/* Left */}
@@ -15,18 +22,11 @@ export const Footer = () => {
 
             {/* Right */}
             <div className={Styles.socials}>
-                <a href="#" title="WallGodds's Email" target="_blank" aria-label="Email" className={Styles.iconBtn}>
-                    <MdMailOutline />
-                </a>
-                <a href="#" title="WallGodds's GitHub" target="_blank" aria-label="GitHub" className={Styles.iconBtn}>
-                    <FaGithub />
-                </a>
-                <a href="#" title="WallGodds's LinkedIn" target="_blank" aria-label="LinkedIn" className={Styles.iconBtn}>
-                    <FaLinkedin />
-                </a>
-                <a href="#" title="WallGodds's Discord" target="_blank" aria-label="Discord" className={Styles.iconBtn}>
-                    <FaDiscord />
-                </a>
+                {socialLinks.map((link, index) => (
+                    <a href={link.url} title={`WallGodds's ${link.name}`} target="_blank" aria-label={link.name} className={Styles.iconBtn} key={index}>
+                        {link.icon}
+                    </a>
+                ))}
             </div>
         </footer>
     );
