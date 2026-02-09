@@ -1,248 +1,245 @@
 .navbar {
-    position: fixed;
-    top: 2rem;
-    left: 0;
-    right: 0;
-    margin: 0 auto;
-    z-index: 1000;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 2rem;
-    width: 75.9375rem;
-    height: 7rem;
-    border-radius: 1rem;
-    background: rgba(255, 255, 255, 0.23);
-    backdrop-filter: blur(33.54999923706055px);
-    transition:
-        background 0.5s cubic-bezier(0.4, 0, 0.2, 1),
-        backdrop-filter 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  position: fixed;
+  top: 2rem;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2rem;
+  width: 75.9375rem;
+  height: 7rem;
+  border-radius: 1rem;
+  background: rgba(255, 255, 255, 0.23);
+  backdrop-filter: blur(33.54999923706055px);
+  transition:
+    background 0.5s cubic-bezier(0.4, 0, 0.2, 1),
+    backdrop-filter 0.5s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .logo img {
-    width: 13.71338rem;
-    height: 2.6435rem;
-    cursor: pointer;
-    transition:
-        opacity 0.3s cubic-bezier(0.4, 0, 0.2, 1),
-        filter 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  width: 13.71338rem;
+  height: 2.6435rem;
+  cursor: pointer;
+  transition:
+    opacity 0.3s cubic-bezier(0.4, 0, 0.2, 1),
+    filter 0.5s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .navigation .menu {
-    list-style: none;
-    display: flex;
-    color: black;
-    font-size: 1.46644rem;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    text-transform: capitalize;
-    gap: 1.5rem;
-    cursor: pointer;
+  list-style: none;
+  display: flex;
+  color: black;
+  font-size: 1.46644rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: capitalize;
+  gap: 1.5rem;
+  cursor: pointer;
 }
 
 .navigation .menu a {
-    text-decoration: none;
-    color: inherit;
-    position: relative;
-    padding-bottom: 0.5rem;
-    transition: color 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  text-decoration: none;
+  color: inherit;
+  position: relative;
+  padding-bottom: 0.5rem;
+  transition: color 0.5s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .navigation .menu a:global(.active)::after {
-    content: "";
-    position: absolute;
-    bottom: 0.3rem;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 2.375rem;
-    height: 0.125rem;
-    border-radius: 2.875rem;
-    background: #000;
-    transition: background 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  content: "";
+  position: absolute;
+  bottom: 0.3rem;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 2.375rem;
+  height: 0.125rem;
+  border-radius: 2.875rem;
+  background: #000;
+  transition: background 0.5s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .navigation .github {
-    text-decoration: none;
-    color: inherit;
-    position: relative;
-    padding-bottom: 0.5rem;
-    transition: color 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  text-decoration: none;
+  color: inherit;
+  position: relative;
+  padding-bottom: 0.5rem;
+  transition: color 0.5s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .github_arrow {
-    margin: 0 0 0.5rem 0.25rem;
-    transition:
-        opacity 0.3s cubic-bezier(0.4, 0, 0.2, 1),
-        filter 0.5s cubic-bezier(0.4, 0, 0.2, 1),
-        transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  margin: 0 0 0.5rem 0.25rem;
+  transition:
+    opacity 0.3s cubic-bezier(0.4, 0, 0.2, 1),
+    filter 0.5s cubic-bezier(0.4, 0, 0.2, 1),
+    transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .actions {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 1rem;
-    cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  cursor: pointer;
 }
 
 .actions .search {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    width: 3.6875rem;
-    height: 2.6875rem;
-    padding: 0 1.25rem 0 0.875rem;
-    border-radius: 0.625rem;
-    background: rgba(255, 255, 255, 0.87);
-    backdrop-filter: blur(2px);
-    overflow: hidden;
-    transition:
-        background 0.5s cubic-bezier(0.4, 0, 0.2, 1),
-        transform 0.3s cubic-bezier(0.4, 0, 0.2, 1),
-        box-shadow 0.5s cubic-bezier(0.4, 0, 0.2, 1),
-        width 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 3.6875rem;
+  height: 2.6875rem;
+  padding: 0 1.25rem 0 0.875rem;
+  border-radius: 0.625rem;
+  background: rgba(255, 255, 255, 0.87);
+  backdrop-filter: blur(2px);
+  overflow: hidden;
+  transition:
+    background 0.5s cubic-bezier(0.4, 0, 0.2, 1),
+    transform 0.3s cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 0.5s cubic-bezier(0.4, 0, 0.2, 1),
+    width 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 }
 .actions .search.open {
-    width: 22.8125rem;
+  width: 22.8125rem;
 }
 
 .actions .search img {
-    width: 1.125rem;
-    height: 1.125rem;
-    transition:
-        opacity 0.3s cubic-bezier(0.4, 0, 0.2, 1),
-        filter 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  width: 1.125rem;
+  height: 1.125rem;
+  transition:
+    opacity 0.3s cubic-bezier(0.4, 0, 0.2, 1),
+    filter 0.5s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .actions .search button {
-    background: none;
-    border: none;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .searchInput {
-    flex: 1;
-    min-width: 0; 
-    border: none;
-    outline: none;
-    background: transparent;
-    padding: 0;
-    font-size: 1rem;
-    line-height: 1.222;
-    font-family: inherit;
-    font-weight: 400;
-    opacity: 0;
-    pointer-events: none;
-    caret-color: #757575;
-    transform: translateX(0.25rem);
-    transition:
-        opacity 0.3s ease,
-        transform 0.3s ease;
+  flex: 1;
+  min-width: 0;
+  border: none;
+  outline: none;
+  background: transparent;
+  padding: 0;
+  font-size: 1rem;
+  line-height: 1.222;
+  font-family: inherit;
+  font-weight: 400;
+  opacity: 0;
+  pointer-events: none;
+  caret-color: #757575;
+  transform: translateX(0.25rem);
+  transition:
+    opacity 0.3s ease,
+    transform 0.3s ease;
 }
 
 .search.open .searchInput {
-    opacity: 1;
-    pointer-events: auto;
-    transform: translateX(0);
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateX(0);
 }
 
-
 .actions .profile {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 4.5rem;
-    height: 2.6875rem;
-    border-radius: 0.625rem;
-    background: rgba(112, 86, 245, 0.87);
-    backdrop-filter: blur(2px);
-    transition:
-        background 0.5s cubic-bezier(0.4, 0, 0.2, 1),
-        transform 0.3s cubic-bezier(0.4, 0, 0.2, 1),
-        box-shadow 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 4.5rem;
+  height: 2.6875rem;
+  border-radius: 0.625rem;
+  background: rgba(112, 86, 245, 0.87);
+  backdrop-filter: blur(2px);
+  transition:
+    background 0.5s cubic-bezier(0.4, 0, 0.2, 1),
+    transform 0.3s cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 0.5s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .actions .profile button {
-    background: none;
-    border: none;
-    cursor: pointer;
-    color: #fff;
-    font-size: 1.46644rem;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    text-transform: capitalize;
-    transition: color 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #fff;
+  font-size: 1.46644rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: capitalize;
+  transition: color 0.5s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .actions .theme {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 2.8125rem;
-    height: 2.6875rem;
-    border-radius: 0.625rem;
-    background: rgba(255, 255, 255, 0.87);
-    backdrop-filter: blur(2px);
-    cursor: pointer;
-    transition:
-        background 0.5s cubic-bezier(0.4, 0, 0.2, 1),
-        transform 0.3s cubic-bezier(0.4, 0, 0.2, 1),
-        box-shadow 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 2.8125rem;
+  height: 2.6875rem;
+  border-radius: 0.625rem;
+  background: rgba(255, 255, 255, 0.87);
+  backdrop-filter: blur(2px);
+  cursor: pointer;
+  transition:
+    background 0.5s cubic-bezier(0.4, 0, 0.2, 1),
+    transform 0.3s cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 0.5s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .actions .theme img {
-    width: 1.21794rem;
-    height: 1.21794rem;
-    transition:
-        width 0.5s cubic-bezier(0.4, 0, 0.2, 1),
-        height 0.5s cubic-bezier(0.4, 0, 0.2, 1),
-        transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  width: 1.21794rem;
+  height: 1.21794rem;
+  transition:
+    width 0.5s cubic-bezier(0.4, 0, 0.2, 1),
+    height 0.5s cubic-bezier(0.4, 0, 0.2, 1),
+    transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 :global(.dark-theme) .navbar {
-    background: rgba(0, 0, 0, 0.38);
-    backdrop-filter: blur(33.54999923706055px);
+  background: rgba(0, 0, 0, 0.38);
+  backdrop-filter: blur(33.54999923706055px);
 }
 
 :global(.dark-theme) .navigation .menu a {
-    color: #fff;
+  color: #fff;
 }
 
 :global(.dark-theme) .navigation .menu a:global(.active)::after {
-    background-color: #fff;
+  background-color: #fff;
 }
 
 :global(.dark-theme) .navigation .github {
-    color: #fff;
+  color: #fff;
 }
 
 :global(.dark-theme) .actions .search {
-    background: rgba(67, 67, 67, 0.87);
-    backdrop-filter: blur(2px);
+  background: rgba(67, 67, 67, 0.87);
+  backdrop-filter: blur(2px);
 }
 
 :global(.dark-theme) .actions .profile {
-    background: rgba(82, 48, 255, 0.87);
-    backdrop-filter: blur(2px);
+  background: rgba(82, 48, 255, 0.87);
+  backdrop-filter: blur(2px);
 }
 
 :global(.dark-theme) .actions .searchInput {
-    color: white;
+  color: white;
 }
 
 :global(.dark-theme) .actions .theme img {
-    width: 1.40625rem;
-    height: 1.40625rem;
+  width: 1.40625rem;
+  height: 1.40625rem;
 }
 
 :global(.dark-theme) .actions .theme {
-    background: rgba(67, 67, 67, 0.87);
-    backdrop-filter: blur(2px);
+  background: rgba(67, 67, 67, 0.87);
+  backdrop-filter: blur(2px);
 }
-
-

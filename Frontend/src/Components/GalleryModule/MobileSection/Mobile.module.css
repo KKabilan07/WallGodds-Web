@@ -1,28 +1,19 @@
-body {
-    margin: 0;
-    padding: 0;
+.pageBg {
+  display: flex;
+  justify-content: center;
+  padding: 20px 0;
+  width: 100%;
 }
 
-.gallery {
-    display: flex;
-    justify-content: center;
-    /* align-items: center; */
-    min-height: 100vh;
-    width: 100%;
-    padding: 0;
+.mobileFrame {
+  width: 65.5rem; /* ✅ same as .temp */
+  max-width: 100%;
+  padding: 16px;
 }
 
 .imgGrid {
-    display: grid;
-    width: 100%;
-    gap: 3.8em;
-    grid-template-columns: repeat(5, 1fr); /* 5 columns by default */
-}
-
-/* Mobile view (max-width: 767px) - 2 items per row */
-@media (max-width: 767px) {
-    .imgGrid {
-        grid-template-columns: repeat(2, 1fr); /* 2 columns on small screens */
-        gap: 10px; /* Reduce gap for better fit */
-    }
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 14px;
+  align-items: start; /* ✅ prevents vertical stretch */
 }

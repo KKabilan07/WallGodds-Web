@@ -17,6 +17,7 @@ import Spiritual from "./categorieItems/Spiritual.svg";
 import Music from "./categorieItems/Music.svg";
 import AIGen from "./categorieItems/AIGen.svg";
 import Desktop from "./DesktopSection/Desktop";
+import Mobile from "./MobileSection/Mobile";
 
 import Styles from "./Gallery.module.css";
 import NavBar from "../CommonModule/NavBarModule/NavBar";
@@ -133,6 +134,7 @@ const Gallery = () => {
         </div>
 
         {activeDevice === "desktop" && <Desktop />}
+        {activeDevice === "mobile" && <Mobile />}
 
         <div className={Styles.footerWrapper}>
           <Footer />
