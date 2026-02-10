@@ -13,6 +13,6 @@
 .imgGrid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
-  align-items: start; /* ✅ prevents vertical stretch */
+  gap: 24px;
+  align-items: start;
 }
