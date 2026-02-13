@@ -150,11 +150,12 @@
   transform: translateX(0);
 }
 
+/* --- UPDATED PROFILE BUTTON --- */
 .actions .profile {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 4.5rem;
+  width: 2.8125rem;   /* Changed from 4.5rem to match width of theme button */
   height: 2.6875rem;
   border-radius: 0.625rem;
   background: rgba(112, 86, 245, 0.87);
@@ -165,18 +166,15 @@
     box-shadow 0.5s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.actions .profile button {
-  background: none;
-  border: none;
-  cursor: pointer;
-  color: #fff;
-  font-size: 1.46644rem;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-  text-transform: capitalize;
-  transition: color 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+.profileLink {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    color: white; /* Ensures SVG stroke is white */
 }
+/* ----------------------------- */
 
 .actions .theme {
   display: flex;
