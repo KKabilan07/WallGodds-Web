@@ -1,8 +1,10 @@
 import NavBar from "../CommonModule/NavBarModule/NavBar";
 import Footer from "../CommonModule/FooterModule/Footer";
 import Styles from "./Home.module.css";
+import { useNavigate } from "react-router-dom";
 
 const Home = () => {
+    const navigate = useNavigate();
     return (
         <>
             <div className={Styles.navbarWrapper}>
@@ -47,6 +49,22 @@ const Home = () => {
                 <div className={Styles.footerWrapper}>
                     <Footer />
                 </div>
+{/*             
+                <button 
+                    onClick={() => navigate("/signin")}
+                    style={{
+                        marginTop: "20px",
+                        padding: "10px 20px",
+                        fontSize: "16px",
+                        cursor: "pointer",
+                        backgroundColor: "#007bff",
+                        color: "white",
+                        border: "none",
+                        borderRadius: "4px"
+                    }}
+                >
+                    Sign In (Test)
+                </button> */}
             </div>
         </>
     );
